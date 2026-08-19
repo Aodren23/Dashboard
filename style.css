@@ -97,7 +97,7 @@ h2 {
 .main-content {
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .header {
@@ -170,7 +170,7 @@ input {
   display: grid;
   background-color: #e6f2dd;
   /* grid-template-columns: repeat(2, 1fr) 250px; */
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 0 1rem 1rem 1rem;
@@ -179,7 +179,7 @@ input {
 .projects {
   grid-column: 1/3;
   grid-row: 1/3;
-  /* background-color: aqua; */
+  background-color: aqua;
 }
 
 .project_details {
@@ -191,8 +191,27 @@ input {
 }
 
 .announcements {
-  background-color: yellow;
   grid-column: 3/4;
+}
+
+.ann_content {
+  background-color: white;
+  padding: 1rem;
+}
+
+.announcements div:not(:last-child) {
+  border-bottom: 2px solid #e6f2dd;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.ann {
+  font-size: 0.9rem;
+  color: #659287;
+}
+
+.ann_heading {
+  font-weight: bold;
 }
 
 .trending {
@@ -202,7 +221,7 @@ input {
 
 .shade {
   box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .projCard {
@@ -237,3 +256,5 @@ button {
   font-weight: bold;
   color: #659287;
 }
+
+/* .bolden */
