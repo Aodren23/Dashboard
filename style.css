@@ -12,11 +12,28 @@ body {
   fill: #e6f2dd;
 }
 
+.card_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #659287;
+}
+
 .logo_icon {
   width: 3rem;
   height: 3rem;
   margin: 0.5rem 0 0 1rem;
   fill: #e6f2dd;
+}
+
+.icon_header {
+  fill: #659287;
+  width: 2rem;
+  height: 2rem;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
 }
 
 .sidebar {
@@ -65,7 +82,7 @@ body {
 h2 {
   color: #e6f2dd;
 }
-
+/* ////////////////////////////// */
 .dashboard {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -84,36 +101,74 @@ h2 {
 }
 
 .header {
-  background-color: gray;
+  background-color: #b1d3b9;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
 
+input {
+  width: 26rem;
+
+  height: 1.5rem;
+  border-radius: 2rem;
+  overlay: none;
+  border-color: #659287;
+}
+
 .htop {
   display: grid;
-  grid-template-columns: 1fr 4fr repeat(2, 1fr) 2fr;
+  grid-template-columns: 5fr 3fr;
   gap: 1rem;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  padding-left: 2rem;
+}
+
+.htop_left {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  align-items: center;
+}
+
+.htop_right {
+  /* background-color: red; */
+  place-items: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  padding-right: 4rem;
+  align-items: center;
+  /* grid-template-rows: 1fr; */
 }
 
 .hbottom {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
+  padding-left: 2rem;
+
   /* grid-template-rows: 1fr; */
 }
 
 .user_name {
-  background-color: blue;
   display: grid;
   grid-template-columns: 100px 1fr;
+}
 
-  /* grid-row: 2/3;
-  grid-column: 1/2; */
+.user_name_avatar {
+  /* align-items: center; */
+}
+
+.action {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding-right: 4rem;
 }
 
 .content {
   display: grid;
+  background-color: #e6f2dd;
   /* grid-template-columns: repeat(2, 1fr) 250px; */
   grid-template-columns: 1fr;
   grid-template-columns: repeat(3, 1fr);
@@ -124,7 +179,7 @@ h2 {
 .projects {
   grid-column: 1/3;
   grid-row: 1/3;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .project_details {
@@ -156,8 +211,8 @@ h2 {
 }
 
 button {
-  color: aliceblue;
-  background-color: lightskyblue;
+  color: #e6f2dd;
+  background-color: #659287;
   border: none;
   border-radius: 20px;
   font-family:
@@ -177,16 +232,8 @@ button {
   max-width: 100px;
 }
 
-.action {
-  background-color: palegoldenrod;
-  grid-column: 2/3;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  align-items: center;
-}
-
 .bold {
   font-size: larger;
   font-weight: bold;
+  color: #659287;
 }
