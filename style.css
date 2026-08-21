@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
   height: 100%;
   font-family: "Roboto", serif;
 }
@@ -82,22 +81,16 @@ body {
 h2 {
   color: #e6f2dd;
 }
-/* ////////////////////////////// */
+
 .dashboard {
   display: grid;
   grid-template-columns: 250px 1fr;
   min-height: 100vh;
-  /* min-height: 100%; */
 }
-
-/* main {
-  /* background-color: lightgray; 
-} */
 
 .main-content {
   display: grid;
   grid-template-rows: auto 1fr;
-  /* gap: 1rem; */
 }
 
 .header {
@@ -109,10 +102,9 @@ h2 {
 
 input {
   width: 26rem;
-
   height: 1.5rem;
   border-radius: 2rem;
-  overlay: none;
+  /* overlay: none; */
   border-color: #659287;
 }
 
@@ -120,7 +112,6 @@ input {
   display: grid;
   grid-template-columns: 5fr 3fr;
   gap: 1rem;
-  /* background-color: aquamarine; */
   padding-left: 2rem;
 }
 
@@ -131,30 +122,23 @@ input {
 }
 
 .htop_right {
-  /* background-color: red; */
   place-items: end;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   padding-right: 4rem;
   align-items: center;
-  /* grid-template-rows: 1fr; */
 }
 
 .hbottom {
   display: grid;
   grid-template-columns: 3fr 2fr;
   padding-left: 2rem;
-
-  /* grid-template-rows: 1fr; */
+  color: #659287;
 }
 
 .user_name {
   display: grid;
   grid-template-columns: 100px 1fr;
-}
-
-.user_name_avatar {
-  /* align-items: center; */
 }
 
 .action {
@@ -169,12 +153,8 @@ input {
 .content {
   display: grid;
   background-color: #e6f2dd;
-  /* grid-template-columns: repeat(2, 1fr) 250px; */
-  /* grid-template-columns: 1fr; */
-  /* grid-template-columns: auto 350px; */
   grid-template-columns: 1fr 1fr 350px;
   grid-template-rows: 1fr;
-
   gap: 1rem;
   padding: 0 1rem 1rem 1rem;
 }
@@ -185,11 +165,10 @@ input {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-  /* background-color: aqua; */
 }
 
 .project_details {
-  /* max-height: 100vh; */
+  padding-right: 0.5rem;
   min-height: 0;
   overflow: auto;
   display: grid;
@@ -199,9 +178,7 @@ input {
 }
 
 .content_side {
-  /* grid-row: ; */
   grid-column: 3/4;
-  /* background-color: red; */
 }
 
 .announcements {
@@ -231,7 +208,6 @@ input {
 }
 
 .trending {
-  /* background-color: yellowgreen; */
   grid-column: 3/4;
 }
 
@@ -247,8 +223,19 @@ input {
 }
 
 .projCard {
-  background-color: blue;
+  background-color: white;
+  color: #659287;
   border-radius: 5px;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  padding: 1rem;
+}
+
+.card_bottom {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  grid-template-rows: 1fr;
 }
 
 button {
@@ -280,7 +267,6 @@ button {
 }
 
 .user {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 1fr 3fr;
   font-size: 0.8rem;
@@ -297,5 +283,3 @@ button {
   padding-inline: 0;
   padding: 0;
 }
-
-/* .bolden */
